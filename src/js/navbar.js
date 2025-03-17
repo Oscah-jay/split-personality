@@ -1,12 +1,10 @@
-// Navigation toggle
+
 const navbarToggle = document.getElementById('navbarToggle');
 const navbarMenu = document.getElementById('navbarMenu');
 
-// Theme toggle
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = themeToggle.querySelector('i');
 
-// Check if dark mode is stored in localStorage
 const isDarkMode = localStorage.getItem('darkMode') === 'true';
 if (isDarkMode) {
     document.body.classList.add('dark-mode');
@@ -14,12 +12,10 @@ if (isDarkMode) {
     themeIcon.classList.add('fa-sun');
 }
 
-// Toggle mobile menu
 navbarToggle.addEventListener('click', function() {
     navbarToggle.classList.toggle('active');
     navbarMenu.classList.toggle('active');
     
-    // Prevent scrolling when menu is open
     if (navbarMenu.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
     } else {
@@ -27,7 +23,6 @@ navbarToggle.addEventListener('click', function() {
     }
 });
 
-// Close menu when clicking outside
 document.addEventListener('click', function(e) {
     if (!navbarMenu.contains(e.target) && !navbarToggle.contains(e.target) && navbarMenu.classList.contains('active')) {
         navbarToggle.classList.remove('active');
@@ -36,11 +31,9 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// Toggle dark mode
 themeToggle.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     
-    // Toggle icon
     if (document.body.classList.contains('dark-mode')) {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
@@ -52,11 +45,9 @@ themeToggle.addEventListener('click', function() {
     }
 });
 
-// Active link highlighting
 const navLinks = document.querySelectorAll('.navbar-link');
 const sections = document.querySelectorAll('section');
 
-// Highlight active section on scroll
 window.addEventListener('scroll', function() {
     let current = '';
     
@@ -76,7 +67,6 @@ window.addEventListener('scroll', function() {
         }
     });
     
-    // If at the top, highlight home
     if (pageYOffset < 100) {
         navLinks.forEach(link => {
             link.classList.remove('active');
@@ -87,7 +77,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Smooth scrolling for navigation links
 navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
         // Only for links with hash
@@ -99,7 +88,7 @@ navLinks.forEach(link => {
             
             if (targetId !== '#') {
                 const targetElement = document.querySelector(targetId);
-                targetPosition = targetElement.offsetTop - 80; // Adjust for navbar height
+                targetPosition = targetElement.offsetTop - 80;
             }
             
             window.scrollTo({
