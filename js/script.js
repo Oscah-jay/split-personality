@@ -75,6 +75,14 @@ function switchToDeveloperMode() {
   devVisual.classList.add("active")
   designVisual.classList.remove("active")
 
+  // Show developer image, hide designer image in about section
+  const devImage = document.querySelector(".about-image .developer-content")
+  const designImage = document.querySelector(".about-image .designer-content")
+  if (devImage && designImage) {
+    devImage.classList.add("active")
+    designImage.classList.remove("active")
+  }
+
   // Update CSS variables
   document.documentElement.style.setProperty("--primary", "var(--dev-primary)")
   document.documentElement.style.setProperty("--secondary", "var(--dev-secondary)")
@@ -99,6 +107,14 @@ function switchToDesignerMode() {
 
   devVisual.classList.remove("active")
   designVisual.classList.add("active")
+
+  // Show designer image, hide developer image in about section
+  const devImage = document.querySelector(".about-image .developer-content")
+  const designImage = document.querySelector(".about-image .designer-content")
+  if (devImage && designImage) {
+    devImage.classList.remove("active")
+    designImage.classList.add("active")
+  }
 
   // Update CSS variables
   document.documentElement.style.setProperty("--primary", "var(--design-primary)")

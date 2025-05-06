@@ -506,7 +506,6 @@ section {
 }
 
 .image-container {
-  position: relative;
   width: 100%;
   max-width: 350px;
   height: 350px;
@@ -534,6 +533,44 @@ section {
   top: 20px;
   left: 20px;
   z-index: -1;
+}
+
+.designer-decoration {
+  border-color: var(--design-primary);
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+}
+
+.designer-content .image-placeholder {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.about-image .image-container {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: var(--transition-medium);
+  position: absolute;
+}
+
+.about-image .image-container.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+}
+
+/* Update the existing .image-container rule to remove the position properties */
+.image-container {
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  margin: 0 auto;
 }
 
 .about-text {
