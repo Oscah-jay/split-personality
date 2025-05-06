@@ -1622,7 +1622,7 @@ section {
   box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
 }
 
-.submit-btn {
+.submit-button {
   padding: 12px 30px;
   background-color: var(--primary);
   color: white;
@@ -1635,7 +1635,7 @@ section {
   transition: var(--transition-fast);
 }
 
-.submit-btn:hover {
+.submit-button:hover {
   background-color: var(--secondary);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
