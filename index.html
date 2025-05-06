@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dual Personality Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">OJ</div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="persona-toggle">
+            <button class="toggle-btn active" data-persona="developer">Dev</button>
+            <button class="toggle-btn" data-persona="designer">Design</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text developer-content active">
+                <h1>Hello, I'm a <span class="highlight">Developer</span></h1>
+                <p>I build exceptional digital experiences with clean, efficient code</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="primary-btn">View Projects</a>
+                    <a href="#contact" class="secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-text designer-content">
+                <h1>Hello, I'm a <span class="highlight">Designer</span></h1>
+                <p>I craft beautiful, intuitive interfaces that users love</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="primary-btn">View Designs</a>
+                    <a href="#contact" class="secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="developer-visual active">
+                <div class="code-block">
+                    <pre><code>
+function createExperience() {
+  const skills = [
+    'JavaScript', 
+    'HTML/CSS',
+    'React', 
+    'Node.js'
+  ];
+  
+  return skills.map(skill => 
+    implement(skill, passion));
+}
+                    </code></pre>
+                </div>
+            </div>
+            <div class="designer-visual">
+                <div class="design-elements">
+                    <div class="color-palette">
+                        <span class="color-dot" style="background-color: #ff6b6b;"></span>
+                        <span class="color-dot" style="background-color: #4ecdc4;"></span>
+                        <span class="color-dot" style="background-color: #ffbe0b;"></span>
+                    </div>
+                    <div class="shape-element"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <span>Your Photo</span>
+                    </div>
+                    <div class="image-decoration"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <div class="developer-content active">
+                    <h3>Developer Journey</h3>
+                    <p>As a passionate developer, I specialize in creating efficient, scalable, and maintainable code. With expertise in modern web technologies, I build applications that deliver exceptional user experiences while maintaining clean architecture and performance.</p>
+                    <div class="about-tags">
+                        <span class="tag">Problem Solver</span>
+                        <span class="tag">Clean Code Advocate</span>
+                        <span class="tag">Performance Optimizer</span>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="designer-content">
+                    <h3>Designer Journey</h3>
+                    <p>As a creative designer, I focus on crafting visually stunning and intuitive user interfaces. My design philosophy centers around user experience, accessibility, and creating memorable visual identities that resonate with target audiences.</p>
+                    <div class="about-tags">
+                        <span class="tag">Visual Storyteller</span>
+                        <span class="tag">UX Enthusiast</span>
+                        <span class="tag">Creative Thinker</span>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">40+</span>
+                            <span class="stat-label">Design Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Design Tools</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <h2>My <span class="highlight">Skills</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-content">
+            <div class="developer-content active">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">HTML</div>
+                        <h3>HTML5</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">CSS</div>
+                        <h3>CSS3</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">React</div>
+                        <h3>React</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Node</div>
+                        <h3>Node.js</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">API</div>
+                        <h3>RESTful APIs</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="designer-content">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">UI</div>
+                        <h3>UI Design</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">UX</div>
+                        <h3>UX Research</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Fg</div>
+                        <h3>Figma</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Ps</div>
+                        <h3>Photoshop</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Ty</div>
+                        <h3>Typography</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">Br</div>
+                        <h3>Branding</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2>My <span class="highlight">Projects</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="projects-content">
+            <div class="developer-content active">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span>Project 1</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack e-commerce solution with payment processing and inventory management.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span>Project 2</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>A productivity application with real-time updates and collaborative features.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">CSS Grid</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span>Project 3</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Weather Dashboard</h3>
+                            <p>A weather application with interactive maps and detailed forecasts.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">API Integration</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Project</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="designer-content">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span>Design 1</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Mobile App UI Design</h3>
+                            <p>A comprehensive UI design for a fitness tracking mobile application.</p>
+                            <div class="project-tags">
+                                <span class="tag">UI Design</span>
+                                <span class="tag">Figma</span>
+                                <span class="tag">Prototyping</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Design</a>
+                                <a href="#" class="project-link">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span>Design 2</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Brand Identity</h3>
+                            <p>Complete brand identity design for a sustainable fashion company.</p>
+                            <div class="project-tags">
+                                <span class="tag">Branding</span>
+                                <span class="tag">Logo Design</span>
+                                <span class="tag">Typography</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Design</a>
+                                <a href="#" class="project-link">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="image-placeholder">
+                                <span>Design 3</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Website Redesign</h3>
+                            <p>UX/UI redesign for an e-commerce platform focusing on conversion optimization.</p>
+                            <div class="project-tags">
+                                <span class="tag">UX Research</span>
+                                <span class="tag">Wireframing</span>
+                                <span class="tag">UI Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">View Design</a>
+                                <a href="#" class="project-link">Case Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Process Section -->
+    <section id="process" class="process-section">
+        <div class="section-header">
+            <h2>My <span class="highlight">Process</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="process-content">
+            <!-- Developer Process -->
+            <div class="developer-content active">
+                <div class="process-intro">
+                    <h3>How I Build Digital Solutions</h3>
+                    <p>My development process is methodical and focused on creating efficient, scalable solutions that solve real problems.</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step" data-step="1">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>Discovery & Planning</h4>
+                            <p>Understanding requirements, defining scope, and planning architecture.</p>
+                            <div class="step-icon">
+                                <div class="code-snippet">
+                                    <span class="code-line">function planProject() {</span>
+                                    <span class="code-line">  analyze(requirements);</span>
+                                    <span class="code-line">  define(architecture);</span>
+                                    <span class="code-line">}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="2">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>Development & Testing</h4>
+                            <p>Writing clean code, implementing features, and ensuring quality through testing.</p>
+                            <div class="step-icon">
+                                <div class="code-snippet">
+                                    <span class="code-line">function buildFeature() {</span>
+                                    <span class="code-line">  writeCode();</span>
+                                    <span class="code-line">  runTests();</span>
+                                    <span class="code-line">}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="3">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>Optimization & Deployment</h4>
+                            <p>Refining performance, ensuring security, and deploying to production.</p>
+                            <div class="step-icon">
+                                <div class="code-snippet">
+                                    <span class="code-line">function deployProject() {</span>
+                                    <span class="code-line">  optimize(performance);</span>
+                                    <span class="code-line">  launch(product);</span>
+                                    <span class="code-line">}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="4">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>Maintenance & Iteration</h4>
+                            <p>Monitoring performance, gathering feedback, and implementing improvements.</p>
+                            <div class="step-icon">
+                                <div class="code-snippet">
+                                    <span class="code-line">function evolveProduct() {</span>
+                                    <span class="code-line">  gatherFeedback();</span>
+                                    <span class="code-line">  implementUpdates();</span>
+                                    <span class="code-line">}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Designer Process -->
+            <div class="designer-content">
+                <div class="process-intro">
+                    <h3>How I Create Visual Experiences</h3>
+                    <p>My design process is creative and user-centered, focusing on crafting beautiful experiences that connect with audiences.</p>
+                </div>
+                <div class="process-timeline">
+                    <div class="process-step" data-step="1">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h4>Research & Inspiration</h4>
+                            <p>Understanding users, exploring trends, and gathering inspiration.</p>
+                            <div class="step-icon">
+                                <div class="design-element">
+                                    <div class="mood-board">
+                                        <span class="inspiration-dot" style="background-color: #ff6b6b;"></span>
+                                        <span class="inspiration-dot" style="background-color: #4ecdc4;"></span>
+                                        <span class="inspiration-dot" style="background-color: #ffbe0b;"></span>
+                                        <span class="inspiration-square"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="2">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h4>Sketching & Wireframing</h4>
+                            <p>Exploring ideas, creating wireframes, and establishing information architecture.</p>
+                            <div class="step-icon">
+                                <div class="design-element">
+                                    <div class="wireframe">
+                                        <div class="wireframe-header"></div>
+                                        <div class="wireframe-content">
+                                            <div class="wireframe-block"></div>
+                                            <div class="wireframe-block"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="3">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h4>Visual Design & Prototyping</h4>
+                            <p>Creating visual designs, refining UI elements, and building interactive prototypes.</p>
+                            <div class="step-icon">
+                                <div class="design-element">
+                                    <div class="prototype">
+                                        <div class="prototype-screen"></div>
+                                        <div class="prototype-button"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process-step" data-step="4">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h4>Testing & Refinement</h4>
+                            <p>Gathering user feedback, making improvements, and finalizing designs.</p>
+                            <div class="step-icon">
+                                <div class="design-element">
+                                    <div class="feedback-element">
+                                        <div class="feedback-circle"></div>
+                                        <div class="feedback-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2>Client <span class="highlight">Testimonials</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="testimonials-content">
+            <div class="developer-content active">
+                <div class="testimonials-container">
+                    <div class="testimonial-controls">
+                        <button class="testimonial-arrow prev-testimonial">←</button>
+                        <button class="testimonial-arrow next-testimonial">→</button>
+                    </div>
+                    <div class="testimonials-slider">
+                        <div class="testimonial-card active">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <div class="avatar-placeholder">JD</div>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <h3>John Doe</h3>
+                                    <p>CEO, Tech Innovations</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <div class="testimonial-quote">"</div>
+                                <p>Working with this developer was an exceptional experience. The code quality was outstanding, and the project was delivered ahead of schedule. Their problem-solving skills saved us countless hours of debugging.</p>
+                                <div class="testimonial-rating">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-code-decoration">
+                                <span>&lt;/<span>
+                                <span>></span>
+                                <span>{}</span>
+                                <span>()</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <div class="avatar-placeholder">AS</div>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <h3>Alice Smith</h3>
+                                    <p>Product Manager, DataFlow</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <div class="testimonial-quote">"</div>
+                                <p>The developer's attention to detail and commitment to clean, maintainable code was impressive. They not only met our requirements but also suggested improvements that enhanced the overall product.</p>
+                                <div class="testimonial-rating">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-code-decoration">
+                                <span>&lt;/<span>
+                                <span>></span>
+                                <span>{}</span>
+                                <span>()</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <div class="avatar-placeholder">RJ</div>
+                                </div>
+                                <div class="testimonial-meta">
+                                    <h3>Robert Johnson</h3>
+                                    <p>CTO, WebSolutions</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-body">
+                                <div class="testimonial-quote">"</div>
+                                <p>I've worked with many developers, but few have the technical expertise and communication skills that this developer possesses. They transformed our complex requirements into elegant, efficient code.</p>
+                                <div class="testimonial-rating">
+                                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-code-decoration">
+                                <span>&lt;/<span>
+                                <span>></span>
+                                <span>{}</span>
+                                <span>()</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="designer-content">
+                <div class="testimonials-grid">
+                    <div class="designer-testimonial">
+                        <div class="designer-testimonial-content">
+                            <div class="designer-quote-mark">❝</div>
+                            <p>The designer's creative vision completely transformed our brand. Their ability to understand our values and translate them into visual elements was remarkable.</p>
+                            <div class="designer-client-info">
+                                <div class="designer-client-avatar">
+                                    <div class="avatar-placeholder">EM</div>
+                                </div>
+                                <div>
+                                    <h3>Emma Martinez</h3>
+                                    <p>Marketing Director, StyleHouse</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="designer-testimonial-decoration"></div>
+                    </div>
+                    <div class="designer-testimonial">
+                        <div class="designer-testimonial-content">
+                            <div class="designer-quote-mark">❝</div>
+                            <p>Working with this designer was a game-changer for our product. Their user-centered approach and attention to detail resulted in a significant increase in user engagement.</p>
+                            <div class="designer-client-info">
+                                <div class="designer-client-avatar">
+                                    <div class="avatar-placeholder">TW</div>
+                                </div>
+                                <div>
+                                    <h3>Thomas Wilson</h3>
+                                    <p>Founder, AppLaunch</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="designer-testimonial-decoration"></div>
+                    </div>
+                    <div class="designer-testimonial">
+                        <div class="designer-testimonial-content">
+                            <div class="designer-quote-mark">❝</div>
+                            <p>The designer's innovative approach to our website redesign exceeded all expectations. They have a unique ability to balance aesthetics with functionality.</p>
+                            <div class="designer-client-info">
+                                <div class="designer-client-avatar">
+                                    <div class="avatar-placeholder">SL</div>
+                                </div>
+                                <div>
+                                    <h3>Sarah Lee</h3>
+                                    <p>CEO, CreativeEdge</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="designer-testimonial-decoration"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2>Get In <span class="highlight">Touch</span></h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-detail">
+                        <h3>Email</h3>
+                        <p>oscahjuma270@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-detail">
+                        <h3>Phone</h3>
+                        <p>+254 (798) 785974</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-detail">
+                        <h3>Location</h3>
+                        <p>Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                    <a href="#" class="social-link">Behance</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">OJ</div>
+            <p class="copyright">© 2025 Oscah's Dual Personality Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#process">Process</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
