@@ -495,6 +495,34 @@ section {
   }
 }
 
+/* About Section Content Switching */
+.about-text > div {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: var(--transition-medium);
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+}
+
+.about-text > div.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  visibility: visible;
+}
+
+/* Ensure non-active content is completely hidden */
+.developer-content:not(.active),
+.designer-content:not(.active) {
+  display: none;
+}
+
+.developer-content.active,
+.designer-content.active {
+  display: block;
+}
+
 /* About Section */
 .about-section {
   background-color: #f8f9fa;
