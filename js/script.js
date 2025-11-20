@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Initialize all portfolio functionality
 function initPortfolio() {
+  // Default to designer mode
+  switchToDesignerMode()
+
   // Setup persona toggle
   setupPersonaToggle()
 
